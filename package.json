@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test homepage.spec.ts --project=production"
+    "production": "npx playwright test homepage.spec.ts --project=production",
+    "debug": "npx playwright test test.spec.ts --project=debug --slow-mo=500"
+
   },
   "keywords": [],
   "author": "",

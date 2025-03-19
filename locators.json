@@ -1,0 +1,9 @@
+{
+    "homePage": {
+      "categoryDropdown": "#searchDropdownBox",
+      "searchBox": "input#twotabsearchtextbox",
+      "searchButton": "#nav-search-submit-button",
+      "navBelt": "#nav-belt"
+    }
+  }
+  

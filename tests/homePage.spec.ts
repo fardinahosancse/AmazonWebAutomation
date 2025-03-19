@@ -18,13 +18,17 @@ test('TC_03: Select "Software" from Drop-down - Ensure Category Updates Correctl
   const value = await pageManager.getHomePage().selectCategory('search-alias=software-intl-ship');
   await expect(value).toBe('Software');
 });
+test('TC_03_Alt: Select "Software" from Drop-down - Ensure Category Updates Correctly',async({pageManager})=>{
+  const value = await pageManager.getHomePage().selectCategoryALT();
+  await expect(value).toBe('Software');
+});
 
-test('TC_04: TC_03: Enter Search Text "Games" - Validate Search Functionality',async({pageManager})=>{
-  const { pT, sV } = await pageManager.getHomePage().selectCategoryandSearchproduct('search-alias=software-intl-ship','Games');
+
+test('TC_04: Enter Search Text "Games" - Validate Search Functionality',async({pageManager})=>{
+  const { pT, sV } = await pageManager.getHomePage().selectCategoryandSearchProduct('search-alias=software-intl-ship','Games');
   await expect(pT).toContain('Amazon.com : Games');
   await expect(sV).toBe('Software');
 });
-
 
 
 
