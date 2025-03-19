@@ -1,0 +1,17 @@
+{
+  "name": "amazonwebautomation_playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test homepage.spec.ts --project=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/node": "^22.13.9",
+    "dotenv": "^16.4.7"
+  }
+}
